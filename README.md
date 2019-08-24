@@ -20,6 +20,13 @@ Zanim przytąpisz do działań, warto wyrównać wiedzę:
 * [Azure Custom Roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles)
 * [Service Principal Namea](https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles)
 
+A jeśli nie wiesz, jakich poleceń użyć, to już wrzucam kilka referencji.
+Ponieważ nie wiem jaką masz stację, podaję referencję do [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest), znajdziesz łatwo odpowiedniki w PowerShell.
+
+* [Zarządzanie użytkownikami - az ad](https://docs.microsoft.com/en-us/cli/azure/ad?view=azure-cli-latest)
+* [Tworzenie SPN'ów](https://docs.microsoft.com/en-us/cli/azure/ad/sp?view=azure-cli-latest)
+* [Role i przypisywanie ról](https://docs.microsoft.com/en-us/cli/azure/role?view=azure-cli-latest)
+
 ### Zadanie domowe 1
 
 Mam dla Ciebie trzy zadania domowe do wykonania.
