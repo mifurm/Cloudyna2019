@@ -4,7 +4,7 @@ Bezpieczeństwo to temat rzeka, może dotyczyć każdego aspektu rozwiązani w A
 
 W tych czterach, krótkich lekcjach postaram się byś nieco "liznął" temat, którym głębiej zajmiejmy się juz w trakcie workshopu w ramach Cloudyna 2019.
 
-## 1 RBAC, Role uzytkowników oraz Service Principal Name
+## 1. RBAC, Role uzytkowników oraz Service Principal Name
 
 Pierwszy bastion bezpieczeństwa w Twojej subskrypcji to tożsamość oraz uprawnienia nadane użytkownikom.
 W Azure cały model uprawnień opiera się o koncepcję RBAC czyli Role Based Access Control, w której występują takie obiekty jak: * Zasób w Azure (Resource), do którego przypisujemy uprawnienie w kontekście uzytkownika lub grupy
@@ -80,7 +80,7 @@ W odpowiedzi napisz mi o swoich doświadczeniach, równiez wtedy, kiedy nie wszy
 
 (**zadanie z "z gwiazdką"**) Jeśli masz ochotę, zastanów się, jakie usługi (z tych dostępnych w Azure), musiałbyś zaangazować i jak zaprojektowałbyś konfigurację, by ruch do Twojego konta składowania danych był filtrowany przez rodzaj Firewall'a. Ruch ten, dla uproszczenia może pochodzić z maszyny wirtualnej. 
 
-## 4 Azure Security Center i Azure Sentinel
+## 4. Azure Security Center i Azure Sentinel
 
 Jeśli szukasz jednego, kompleksowego podejscia do tematu bezpieczenstwa w ramach jednej lub wielu subskrypcji, musisz koniecznie przyjzec się tym dwum rozwiązaniom.
 
@@ -108,7 +108,7 @@ A na koniec, jeśli masz siłę (a przecież tak na pewno jest:)), spróbuj wł�
 
 Daj znać co udało się osiągnąć, zachęcam do zrobienia wszystkich puntków.
 
-## 5 Podsumowanie
+## 5. Podsumowanie
 
 Przez ostatnie 4 dni trochę "polizaliśmy lizaka przez szybę", patrząc na jakie aspekty mozesz zwrocić uwagę myśląc o konfiguracji bezpieczeństwa w swojej subskrypcji Azure.
 Mam nadzieję, ze mimo wszystko poczułeś, ze przed Tobą duzo ciekawej pracy ale tez duza ilość punktów swobody do dalszej konfiguracji.
