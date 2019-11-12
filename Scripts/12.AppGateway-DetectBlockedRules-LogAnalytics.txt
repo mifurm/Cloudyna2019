@@ -1,0 +1,25 @@
+AzureDiagnostics
+| where Category == "ApplicationGatewayFirewallLog"
+| where action_s == "Blocked"
+| project TimeGenerated, details_file_s, details_message_s, action_s, Message, Category, ruleId_s, requestUri_s, clientIp_s, hostname_s, details_data_s
+| summarize any(details_data_s) by details_file_s, details_message_s, details_data_s, bin(TimeGenerated, 10m), action_s, Message, Category, ruleId_s, requestUri_s, clientIp_s, hostname_s
+ 
+AzureDiagnostics
+| where Category == "ApplicationGatewayFirewallLog"
+| where action_s == "Blocked"
+| summarize count(details_message_s) by details_message_s, bin(TimeGenerated, 5m)
+| render barchart
+ 
+AzureDiagnostics
+| where Category == "ApplicationGatewayFirewallLog"
+| where action_s == "Blocked"
+| where TimeGenerated > ago(2d)
+| project TimeGenerated, details_file_s, details_message_s, action_s, Message, Category, ruleId_s, requestUri_s, clientIp_s, hostname_s
+| sort by TimeGenerated desc nulls first
+ 
+AzureDiagnostics 
+| where Category == "ApplicationGatewayFirewallLog" 
+| where action_s == "Blocked" 
+| project TimeGenerated, details_file_s, details_message_s, action_s, Message, Category, ruleId_s, requestUri_s, clientIp_s, hostname_s, details_data_s 
+| summarize any(details_data_s) by details_file_s, details_message_s, details_data_s, bin(TimeGenerated, 10m), action_s, Message, ruleId_s
+ 

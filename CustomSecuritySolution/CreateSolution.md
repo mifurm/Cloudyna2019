@@ -1,0 +1,1 @@
+http://cloudarchitects.pl/2017/08/jak-szybko-sprawdzic-ile-zajmuja-twoje-dane-w-chmurze/

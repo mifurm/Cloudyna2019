@@ -1,0 +1,25 @@
+{
+    "Name": "Virtual Machine Operator without Restart",
+    "IsCustom": true,
+    "Description": "Can monitor and restart virtual machines.",
+    "Actions": [
+      "Microsoft.Storage/*/read",
+      "Microsoft.Network/*/read",
+      "Microsoft.Compute/*/read",
+      "Microsoft.Authorization/*/read",
+      "Microsoft.ResourceHealth/availabilityStatuses/read",
+      "Microsoft.Resources/subscriptions/resourceGroups/read",
+      "Microsoft.Insights/alertRules/*",
+      "Microsoft.Insights/diagnosticSettings/*",
+      "Microsoft.Support/*"
+    ],
+    "NotActions": [
+      "Microsoft.Compute/virtualMachines/start/action",
+      "Microsoft.Compute/virtualMachines/restart/action"
+    ],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+        "/subscriptions/9d4350c8-e11c-4007-a923-c1df11a52bab"
+    ]
+}

@@ -1,0 +1,1 @@
+az group deployment create -n dep02 -g cloudyna219 --template-file az.json

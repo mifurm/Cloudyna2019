@@ -1,0 +1,15 @@
+az subscription set --subscription "3a81269f-0731-42d7-9911-a8e9202fa750"
+
+az role definition create --role-definition VirtualMachineOperator.json
+
+az role definition create --role-definition VirtualMachineOperatorWithoutRestart.json
+
+az ad user create --display-name "clouduser01" --password "Testtest123@@@" --user-principal-name "clouduser01@chmurowiskolab.onmicrosoft.com"
+
+az ad user list --display-name "clouduser01"
+
+az role assignment create --assignee "9548bfbf-6659-4f3c-9a94-d8daf206e65e" --role "Virtual Machine Operator" --scope "/subscriptions/9d4350c8-e11c-4007-a923-c1df11a52bab/resourceGroups/cloudyna219"
+
+az role assignment create --assignee "9548bfbf-6659-4f3c-9a94-d8daf206e65e" --role "Virtual Machine Operator without Restart" --scope "/subscriptions/9d4350c8-e11c-4007-a923-c1df11a52bab/resourceGroups/cloudyna219"
+
+https://docs.microsoft.com/en-us/azure/governance/blueprints/
